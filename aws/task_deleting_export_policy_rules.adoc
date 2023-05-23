@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: aws/task_deleting_export_policy_rules.html 
+keywords: Cloud Volumes Service for AWS, export policy rules 
+summary: È possibile eliminare le regole dei criteri di esportazione non più necessarie. 
+---
+= Eliminazione delle regole dei criteri di esportazione
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile eliminare le regole dei criteri di esportazione non più necessarie.
+
+.Fasi
+. Fare clic sul nome del volume, quindi selezionare *Export policy*.
+. Fare clic su *X* per la regola di policy che si desidera eliminare.
++
+image:diagram_export_policy_delete.png["Eliminazione di un criterio di esportazione"]
+
+. Fare clic su *Save Changes* (Salva modifiche).
+

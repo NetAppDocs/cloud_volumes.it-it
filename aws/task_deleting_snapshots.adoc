@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: aws/task_deleting_snapshots.html 
+keywords: Cloud Volumes Service for AWS, snapshots 
+summary: 'È possibile eliminare uno snapshot dalla pagina Volumes (volumi) o Snapshots (istantanee).' 
+---
+= Eliminazione di uno snapshot
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile eliminare uno snapshot dalla pagina Volumes (volumi) o Snapshots (istantanee).
+
+
+
+== Eliminazione di uno snapshot dalla pagina Volumes (volumi)
+
+.Fasi
+. Fare clic sul nome del volume, quindi selezionare *Snapshot* per visualizzare un elenco di snapshot per il volume.
+. Specificare gli snapshot da eliminare selezionando le caselle di controllo corrispondenti, fare clic su *azioni*, quindi selezionare *Elimina snapshot* dall'elenco a discesa.
++
+In alternativa, è possibile fare clic su *Available* in Actions (azioni), quindi selezionare *Delete snapshot* (Elimina snapshot) dall'elenco a discesa.
+
+. Nella finestra di dialogo di conferma, digitare `delete` Per confermare, quindi fare clic su *Delete* (Elimina).
+
+
+
+
+== Eliminazione di uno snapshot dalla pagina Snapshot
+
+.Fasi
+. (Facoltativo) utilizzare la casella di ricerca per filtrare le snapshot elencate.
+. Specificare gli snapshot da eliminare selezionando le caselle di controllo corrispondenti, fare clic su *azioni*, quindi selezionare *Elimina snapshot* dall'elenco a discesa.
+. Nella finestra di dialogo di conferma, digitare `delete` Per confermare, quindi fare clic su *Delete* (Elimina).
+

@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: aws/index.html 
+summary: Benvenuti nel portale di documentazione di NetApp Cloud Volumes Service per AWS. 
+---
+= Documentazione di NetApp Cloud Volumes Service per AWS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: cloud volumes, amazon web services, AWS, documentation, help
+
+
+[role="lead"]
+NetApp Cloud Volumes Service per AWS è un file service nativo nel cloud che offre volumi NAS su NFS e SMB con performance all-flash. Questo servizio consente l'esecuzione di qualsiasi workload, incluse le applicazioni legacy, nel cloud AWS.
+
+
+
+== Vantaggi dell'utilizzo di Cloud Volumes Service per AWS
+
+Cloud Volumes Service per AWS offre i seguenti vantaggi:
+
+* Performance elevate e costanti
+* Protezione dei dati senza impatti sulle performance
+* Cloning istantaneo per supportare operazioni, sviluppo e workflow di test
+* Supporto per i protocolli NAS NFSv3 e NFSv4.1, SMB 2.1, 3.0 e 3.1.1
+* Accesso sicuro alle istanze Linux e Windows Elastic Container Service (ECS), con supporto incluso quanto segue:
++
+** Amazon Linux 2, Red Hat Enterprise Linux 7.5, SLES 12 SP3 e Ubuntu 16.04 LTS
+** Windows Server 2008 R2, Windows Server 2012 R2 e Windows Server 2016
+
+
+* Servizio completamente gestito, quindi non è necessario configurare o gestire i dispositivi storage
+* Scelta di prezzi in bundle e pay-as-you-go
+
+
+
+
+== Eseguire le attività principali
+
+* link:task_selecting_region.html["Selezione della regione"]
+* link:task_creating_cloud_volumes_for_aws.html["Creazione di un volume cloud"]
+* link:task_mounting_cloud_volumes_for_aws.html["Montaggio di un volume cloud"]
+* link:task_creating_on_demand_snapshots.html["Creazione di uno snapshot on-demand per un volume cloud"]
+
+
+
+
+== Scopri di più su Cloud Volumes Service per AWS
+
+video::hL4rosv-iZQ[youtube,width=848,height=480]
+
+
+== Trova ulteriori informazioni
+
+* https://cloud.netapp.com/home["NetApp Cloud Central"^]
+* https://www.netapp.com/us/forms/campaign/register-for-netapp-cloud-volumes-for-aws.aspx?hsCtaTracking=4f67614a-8c97-4c15-bd01-afa38bd31696%7C5e536b53-9371-4ce1-8e38-efda436e592e["Scopri in primo luogo il nuovo NetApp Cloud Volumes Service per AWS"^]
+

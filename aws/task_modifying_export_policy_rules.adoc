@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: aws/task_modifying_export_policy_rules.html 
+keywords: Cloud Volumes Service for AWS, export policy rules, client access, access types 
+summary: È possibile modificare la regola dei criteri di esportazione per un volume in base alle esigenze. 
+---
+= Modifica di una regola dei criteri di esportazione
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile modificare la regola dei criteri di esportazione per un volume in base alle esigenze.
+
+.Fasi
+. Fare clic sul nome del volume, quindi selezionare *Export policy*.
+. Per modificare una regola dei criteri di esportazione esistente, modificare i seguenti campi in base alle necessità:
++
+** *Client consentito*
+** *Tipo di accesso*
+
+
+. Fare clic su *Save Changes* (Salva modifiche).
+

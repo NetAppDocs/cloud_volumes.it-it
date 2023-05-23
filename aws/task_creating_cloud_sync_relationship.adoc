@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: aws/task_creating_cloud_sync_relationship.html 
+keywords: Cloud Volumes Service for AWS, Cloud Sync relationships, target, source 
+summary: Una relazione Cloud Sync consente di sincronizzare i dati da o verso il volume cloud. 
+---
+= Creazione di una relazione Cloud Sync
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Una relazione Cloud Sync consente di sincronizzare i dati da o verso il volume cloud.
+
+.Prima di iniziare
+* Devi già disporre di un data broker Cloud Sync.
++
+link:task_creating_cloud_sync_data_broker.html["Creazione di un data broker Cloud Sync"]
+
+* L'indirizzo IP del broker di dati deve essere stato aggiunto alla policy di esportazione per i volumi di origine e di destinazione.
++
+Il criterio di esportazione sul volume di destinazione deve consentire l'accesso in scrittura al data broker.
+
++
+link:task_creating_additional_export_policy_rules.html["Creazione di regole aggiuntive per i criteri di esportazione"]
+
+
+
+.A proposito di questa attività
+La funzionalità Cloud Sync integrata con Cloud Volumes Service attualmente supporta solo NFSv3. Se si desidera eseguire la sincronizzazione tra volumi SMB, utilizzare https://cloudsync.netapp.com["Servizio Cloud Sync"^] direttamente (cloudsync.netapp.com).
+
+.Fasi
+. Accedere alla pagina Sync (sincronizzazione) o alla scheda Sync (sincronizzazione) per un volume nella pagina Volumes (volumi).
+. Creare una relazione Cloud Sync facendo clic su *Crea nuova relazione*.
+. Eseguire una delle seguenti operazioni:
++
+** Per sincronizzare i dati nel volume, selezionare *Usa volume come destinazione*.
+** Per sincronizzare i dati dal volume, selezionare *Usa volume come origine*.
++
+image::diagram_creating_cloud_sync_relationship.png[Creazione di una relazione Cloud Sync]
+
+
+
+. Nel campo *host* (non compilato), immettere l'indirizzo IP del server NFS con cui si desidera eseguire la sincronizzazione o la sincronizzazione.
++
+Dopo alcuni istanti, viene automaticamente rilevato un elenco delle esportazioni disponibili.
+
+. Nel campo *Export*, selezionare una delle esportazioni disponibili.
+. (Facoltativo) selezionare la casella *Delete Files on target when deleted from source* (Elimina file sulla destinazione quando vengono eliminati dall'origine) se si desidera eliminare i file sulla destinazione quando vengono eliminati dall'origine.
+. Fare clic su *Crea relazione*.
++
+Viene visualizzato lo stato della relazione e i campi di avanzamento del file indicano il numero di file copiati.
+
+

@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: aws/task_reverting_volume_to_snapshot.html 
+keywords: Cloud Volumes Service for AWS, snapshots, restore, revert 
+summary: È possibile ripristinare un volume a un momento precedente da uno snapshot esistente. 
+---
+= Ripristino di un volume da uno snapshot
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile ripristinare un volume a un momento precedente da uno snapshot esistente.
+
+Quando si ripristina un volume, il contenuto dello snapshot sovrascrive la configurazione del volume esistente. Tutte le modifiche apportate ai dati nel volume dopo la creazione dello snapshot andranno perse.
+
+Tenere presente che i client non devono rimontare il volume dopo l'operazione di revert.
+
+.Fasi
+. Nella pagina Snapshot o nella scheda Snapshot in Dettagli volume, selezionare l'istantanea a cui si desidera ripristinare, fare clic su *Available*, quindi selezionare *Ripristina volume in snapshot*.
+. Nella finestra di dialogo Ripristina snapshot, immettere nuovamente il nome del volume che si desidera ripristinare e fare clic su *Ripristina*.
+

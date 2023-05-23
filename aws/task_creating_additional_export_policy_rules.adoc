@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: aws/task_creating_additional_export_policy_rules.html 
+keywords: Cloud Volumes Service for AWS, export policy rules, clients, IP range, access 
+summary: È possibile creare ulteriori regole dei criteri di esportazione per consentire un accesso client flessibile. Ad esempio, è possibile specificare che un determinato intervallo IP debba avere accesso solo in lettura a un volume. 
+---
+= Creazione di regole aggiuntive per i criteri di esportazione
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile creare ulteriori regole dei criteri di esportazione per consentire un accesso client flessibile. Ad esempio, è possibile specificare che un determinato intervallo IP debba avere accesso solo in lettura a un volume.
+
+.Fasi
+. Fare clic sul nome del volume, quindi selezionare *Export policy*.
+. Fare clic su *+ Aggiungi regola policy di esportazione*.
+. Impostare i valori per i seguenti campi:
++
+** *Client consentito*
+** *Tipo di accesso*
+
+
+. Fare clic su *Save Changes* (Salva modifiche).
+

@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: aws/task_selecting_region.html 
+keywords: Cloud Volumes Service for AWS, regions 
+summary: Cloud Volumes Service è disponibile in molte regioni AWS. È necessario specificare la regione in cui si desidera utilizzare il servizio prima di creare un volume cloud. 
+---
+= Selezione della regione
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Cloud Volumes Service è disponibile in molte regioni AWS. È necessario specificare la regione in cui si desidera utilizzare il servizio prima di creare un volume cloud.
+
+.Fasi
+. Passare a. https://cds-aws-bundles.netapp.com/storage/volumes["NetApp Cloud Orchestrator"^] e accedere con l'indirizzo e-mail fornito durante l'abbonamento.
++
+Questo URL deve essere inserito tra i preferiti. Sarà necessario tornare in un secondo momento.
+
+. Dal menu a discesa *Available regions* (regioni disponibili) nel pannello superiore, selezionare la regione in cui si desidera lavorare.
++
+Questo processo di selezione è simile al modo in cui si modificano le regioni nella console AWS.
+
++
+image::diagram_selecting_region.png[Selezione della regione]
+
+. Ripetere il passaggio precedente per ogni regione aggiuntiva quando si desidera creare un volume cloud.
+
+
+*Nota:* le regioni visualizzate nell'interfaccia utente di Cloud Volumes possono utilizzare un formato diverso da quello della regione selezionata nell'interfaccia utente di AWS. Ad esempio _us-East-1_ nell'interfaccia utente Cloud Volumes corrisponde alla regione _N.Virginia_ selezionata nella console AWS. Vedere https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html["Regioni e zone di disponibilità"^] per una mappatura dei nomi delle regioni per assicurarsi di selezionare la stessa regione in entrambe le interfacce.

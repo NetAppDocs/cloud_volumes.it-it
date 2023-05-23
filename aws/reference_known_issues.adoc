@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: aws/reference_known_issues.html 
+keywords: Cloud Volumes Service for AWS limitations and known issues 
+summary: In Cloud Volumes Service per AWS sono presenti i seguenti problemi noti e limitazioni. 
+---
+= Problemi noti e limitazioni
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+In Cloud Volumes Service per AWS sono presenti i seguenti problemi noti e limitazioni.
+
+* *Problema*: Se un volume esistente supporta solo NFSv3 e un volume viene creato o convertito con il supporto NFSv4.1 o NFSv3 e NFSv4.1, il volume esistente potrebbe non essere montabile senza specificare la versione di NFS (vers=3).
++
+*Soluzione*: Aggiungere l'opzione per specificare la versione di NFS al comando mount, ad esempio `mount -o vers=3 ...` Oppure assicurati che tutti i volumi siano convertiti per supportare NFSv4.1. Si noti che i client Linux imposteranno NFSv4.1 per impostazione predefinita, a meno che non venga specificata la versione.
+
+* *Problema*: La creazione di un nuovo volume da uno snapshot potrebbe non riuscire con il messaggio 'Impossibile impostare l'attributo del volume "file" per il volume _<volume>_ …​ motivo: Il nuovo conteggio deve essere maggiore del conteggio allocato corrente di _<number>_'.
++
+*Soluzione*: Questo problema si verifica quando si tenta di creare un volume da uno snapshot a cui sono attualmente allocati più file di quanti il nuovo volume venga assegnato per la sua capacità allocata. È necessario aumentare la capacità allocata del nuovo volume per assegnare un numero sufficiente di file (inode). Vedere link:reference_selecting_service_level_and_quota.html#allocated-capacity["Selezione della capacità allocata"] per ulteriori informazioni.
+
+* *Problema*: Le interfacce virtuali di rete verranno eliminate automaticamente nelle regioni CVS che non hanno volumi dopo 72 ore. Quando si crea un nuovo volume, è necessario fornire nuovamente il numero di account AWS e il CIDR.
++
+*Soluzione*: Per evitare che le interfacce virtuali di rete vengano eliminate durante i periodi di inattività, lasciare almeno un volume e ridurre il livello di allocazione e servizio per ridurre al minimo i costi.
+
+* *Problema*: Gli utenti con sottoscrizioni scadute non possono accedere all'interfaccia utente di Cloud Volumes Service o interagire con l'API.
++
+*Soluzione*: Accedere alla pagina di AWS Marketplace per Cloud Volumes Service e rinnovare l'abbonamento.
+
+

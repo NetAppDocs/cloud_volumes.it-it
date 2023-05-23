@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: aws/task_disabling_snapshot_policy.html 
+keywords: Cloud Volumes Service for AWS, snapshot policies 
+summary: Se si desidera impedire la creazione di snapshot per un breve periodo di tempo mantenendo le impostazioni dei criteri di snapshot, è possibile disattivare il criterio di snapshot. 
+---
+= Disattivazione di un criterio di snapshot
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile disattivare un criterio di snapshot per impedire la creazione di snapshot per un breve periodo di tempo, mantenendo le impostazioni del criterio di snapshot.
+
+.Fasi
+. Dalla pagina Volumes (volumi), fare clic sul nome del volume, quindi selezionare *Snapshot policy*.
+. Fare clic sul pulsante *Enabled* (attivato) su *OFF* per disattivare la creazione delle istantanee.
++
+image:diagram_snapshot_policy_button.png["Pulsante Enable (attiva) del criterio Snapshot"]
+
+. Fare clic su *Save Changes* (Salva modifiche).
+
+
+Quando si desidera riattivare il criterio di snapshot, fare clic sul pulsante *Enabled* (attivato) su *ON* e fare clic su *Save Changes* (Salva modifiche).

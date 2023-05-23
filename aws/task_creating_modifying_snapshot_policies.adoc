@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: aws/task_creating_modifying_snapshot_policies.html 
+keywords: Cloud Volumes Service for AWS, snapshot policies 
+summary: È possibile creare o modificare una policy di snapshot in base alle necessità per un volume cloud. 
+---
+= Creazione o modifica di un criterio di snapshot
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile creare o modificare una policy di snapshot in base alle necessità per un volume cloud.
+
+.Fasi
+. Dalla pagina Volumes (volumi), fare clic sul nome del volume, quindi selezionare *Snapshot policy*.
+. Selezionare *orario*, *giornaliero*, *settimanale* o *mensile* per specificare la frequenza di creazione degli snapshot.
++
+I criteri configurati sono contrassegnati da un punto verde. I criteri non definiti sono contrassegnati da un punto rosso.
+
+. Selezionare il numero di snapshot che si desidera conservare.
+. Selezionare il giorno, l'ora e il minuto in cui eseguire l'istantanea.
+. Se si desidera creare snapshot aggiuntive con frequenze diverse, ad esempio, snapshot mensili e giornaliere, ripetere i passaggi da 2 a 4.
++
+image:diagram_snapshot_policy_modify.png["Policy di Snapshot"]
+
+. Se il pulsante *Enabled* non è già impostato su *ON*, fare clic sul pulsante per attivare o riattivare il criterio.
+. Fare clic su *Save Changes* (Salva modifiche).
+

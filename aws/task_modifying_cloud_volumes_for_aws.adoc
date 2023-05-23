@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: aws/task_modifying_cloud_volumes_for_aws.html 
+keywords: Cloud Volumes Service for AWS, volume names, allocated capacity, service levels. 
+summary: È possibile modificare i volumi esistenti, tra cui la modifica del nome del volume, della capacità allocata o del livello di servizio. 
+---
+= Modifica di un volume cloud
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile modificare i volumi esistenti, tra cui la modifica del nome del volume, della capacità allocata o del livello di servizio.
+
+.Fasi
+. Accedere a. https://cds-aws-bundles.netapp.com/storage/volumes["NetApp Cloud Orchestrator"^].
+. Fare clic sul nome del volume che si desidera gestire.
+. Modificare i seguenti campi volume in base alle esigenze:
++
+** Nome
+** Tag
+** Capacità allocata
+** Livello di servizio
++
+La modifica del livello di servizio non comporta interruzioni e non influisce sull'accesso ai dati del client.
+
+
+
+
+
+Si noti che il numero di inode disponibili dipende dalla capacità allocata.
+
+Vedere link:reference_selecting_service_level_and_quota.html["Selezione del livello di servizio appropriato e della capacità allocata"] per ulteriori informazioni.

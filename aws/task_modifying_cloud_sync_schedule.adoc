@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: aws/task_modifying_cloud_sync_schedule.html 
+keywords: Cloud Volumes Service for AWS, Cloud Sync schedule, auto sync 
+summary: Quando viene inizialmente creata una relazione Cloud Sync, la sincronizzazione automatica viene attivata per impostazione predefinita e pianificata per essere eseguita una volta al giorno. È possibile modificare la pianificazione Cloud Sync in base alle esigenze. 
+---
+= Modifica della pianificazione Cloud Sync
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Quando viene inizialmente creata una relazione Cloud Sync, la sincronizzazione automatica viene attivata per impostazione predefinita e pianificata per essere eseguita una volta al giorno. È possibile modificare la pianificazione Cloud Sync in base alle esigenze.
+
+.Fasi
+. Accedere alla pagina Sync (sincronizzazione) o alla scheda Sync (sincronizzazione) per un volume nella pagina Volumes (volumi) per visualizzare le relazioni Cloud Sync (sincronizzazione).
++
+image::diagram_modifying_cloud_sync_schedule_sync_relationship.png[Sincronizzare le relazioni]
+
+. Per disattivare la sincronizzazione automatica per una relazione Cloud Sync, fare clic sul dispositivo di scorrimento blu *ON* per la relazione.
++
+image::diagram_modifying_cloud_sync_schedule_auto_sync.png[Cursore di sincronizzazione automatica]
+
+. Per modificare la pianificazione di sincronizzazione, fare clic sull'elenco a discesa in *Schedule* (Pianificazione), selezionare *Day/s* o *Hour/s*, selezionare un numero di intervallo, quindi fare clic sul segno di spunta.
++
+image::diagram_modifying_cloud_sync_schedule.png[Modifica della pianificazione Cloud Sync]
+
+. Per avviare immediatamente Cloud Sync, fare clic su *fine* in azione, selezionare *Sincronizza ora* e fare nuovamente clic su *Sincronizza ora* per confermare.
+

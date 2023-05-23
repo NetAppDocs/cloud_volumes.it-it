@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: aws/task_deleting_cloud_sync_data_broker.html 
+keywords: Cloud Volumes Service for AWS, Cloud Sync, data brokers 
+summary: È possibile eliminare un data broker Cloud Sync non più necessario. 
+---
+= Eliminazione di un broker di dati Cloud Sync
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile eliminare un data broker Cloud Sync non più necessario.
+
+.A proposito di questa attività
+Questa attività rimuove il data broker dai volumi cloud, ma non elimina l'istanza del data broker in AWS.
+
+Per eliminare l'istanza del broker di dati in AWS, è necessario accedere alla console AWS dell'account, individuare l'istanza EC2 del broker per nome, quindi terminarla in base alle necessità.
+
+.Prima di iniziare
+Tutte le relazioni Cloud Sync che utilizzano il data broker devono essere già state eliminate prima di poter eliminare il data broker.
+
+link:task_deleting_cloud_sync_relationship.html["Eliminazione di una relazione Cloud Sync"]
+
+.Fasi
+. Accedere alla pagina Sync (sincronizzazione) o alla scheda Sync (sincronizzazione) per un volume nella pagina Volumes (volumi).
+. Eliminare un data broker facendo clic sul nome del data broker e sull'icona del cestino.
+. Nella finestra di dialogo di conferma, digitare `delete` Per confermare, quindi fare clic su *Delete* (Elimina).
+

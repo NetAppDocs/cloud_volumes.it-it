@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: aws/task_restoring_snapshots_to_new_volumes.html 
+keywords: Cloud Volumes Service for AWS, snapshots, restore 
+summary: Se necessario, è possibile ripristinare uno snapshot in un nuovo volume. 
+---
+= Ripristino di uno snapshot in un nuovo volume
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Se necessario, è possibile ripristinare uno snapshot in un nuovo volume.
+
+.Fasi
+. Nella pagina Snapshot o nella sezione Snapshot in Dettagli volume, selezionare lo snapshot da cui eseguire il ripristino, fare clic su *Available*, quindi selezionare *Restore to Volume* (Ripristina nel volume).
+. Nella finestra di dialogo Create Volume (Crea volume), immettere un nome per il nuovo volume e modificare altre impostazioni, se necessario.
++
+link:task_creating_cloud_volumes_for_aws.html["Creazione di un volume cloud"]
+
+. Rivedere le impostazioni, quindi fare clic su *Create volume* (Crea volume) per terminare il ripristino dello snapshot nel nuovo volume.
+

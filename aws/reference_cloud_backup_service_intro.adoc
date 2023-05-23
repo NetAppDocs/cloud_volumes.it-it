@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: aws/reference_cloud_backup_service_intro.html 
+keywords: Cloud Volumes Service for AWS, Cloud Backup Service 
+summary: Puoi eseguire il backup dei volumi cloud NFS utilizzando Cloud Backup Service. 
+---
+= Gestione dei backup con Cloud Backup Service (beta per US-WEST-2)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puoi eseguire il backup dei volumi cloud NFS utilizzando Cloud Backup Service.
+
+Cloud Backup Service espande le funzionalità di protezione dei dati di Cloud Volumes Service offrendo backup dedicati per il ripristino a lungo termine, l'archiviazione e la conformità. I backup creati dal servizio vengono memorizzati nello storage a oggetti AWS S3, indipendentemente dalle snapshot dei volumi cloud disponibili per il ripristino o il cloning a breve termine.
+
+Cloud Backup Service è attualmente in versione beta e supporta solo Cloud Volumes Service nella regione AWS US-WEST-2.
+
+Prima di utilizzare Cloud Backup Service, è necessario comprendere e accettare i termini, i requisiti e le considerazioni per l'utilizzo del software beta. Vedere link:media/cloud_backup_service_beta.pdf["Configurazione di Cloud Backup Service per NetApp Cloud Volumes Service per AWS"^] per dettagli e istruzioni sull'utilizzo del servizio.
